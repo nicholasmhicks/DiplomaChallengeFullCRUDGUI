@@ -18,7 +18,7 @@ namespace CrudGUI
 
             using (HttpClient client = new HttpClient())
             {
-                client.BaseAddress = new Uri("https://challengeapinicholas.azurewebsites.net/");
+                client.BaseAddress = new Uri("https://challengeapinicholasnew.azurewebsites.net/");
 
                 string product = "";
 
