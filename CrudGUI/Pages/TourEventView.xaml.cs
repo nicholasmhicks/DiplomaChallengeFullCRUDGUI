@@ -32,7 +32,7 @@ namespace CrudGUI.Pages
         }
         private async void Window_Loaded(object sender, RoutedEventArgs e)
         {
-
+              
         }
         void PopulateGrid(List<dynamic> entities)
         {
