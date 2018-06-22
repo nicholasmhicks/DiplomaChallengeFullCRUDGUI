@@ -10,18 +10,19 @@
 
     <Grid>
         <DataGrid x:Name="Data" HorizontalAlignment="Center" MaxHeight="400" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto" VerticalAlignment="Stretch" MaxWidth="700" Loaded="Window_Loaded" SelectionChanged="Data_SelectionChanged" Margin="201,164,3,162"/>
-        <TextBox x:Name="BookingIdTextBox" HorizontalAlignment="Left" Height="23" Margin="10,57,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="ClientIdTextBox" HorizontalAlignment="Left" Height="23" Margin="10,85,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="TourNameTextBox" HorizontalAlignment="Left" Height="23" Margin="10,137,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="EventMonthTextBox"  HorizontalAlignment="Left" Height="23" Margin="10,195,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="EventDayTextBox" HorizontalAlignment="Left" Height="23" Margin="10,232,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="EventYearTextBox" HorizontalAlignment="Left" Height="23" Margin="10,273,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="PaymentTextBox" HorizontalAlignment="Left" Height="23" Margin="10,317,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="DateBookedTextBox" HorizontalAlignment="Left" Height="23" Margin="10,359,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Update" HorizontalAlignment="Left" Margin="23,387,0,0" VerticalAlignment="Top" Width="75" Click="Update_Click"/>
-        <Button Content="Delete" HorizontalAlignment="Left" Margin="146,387,0,0" VerticalAlignment="Top" Width="75" Click="Delete_Click"/>
-        <Button Content="Add" HorizontalAlignment="Left" Margin="271,387,0,0" VerticalAlignment="Top" Width="75" Click="Add_Click"/>
-        <TextBlock x:Name="BookingsTextBlock" HorizontalAlignment="Left" Margin="515,369,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="38" Width="249"/>
+        <TextBox x:Name="BookingIdTextBox" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="ClientIdTextBox" HorizontalAlignment="Left" Height="23" Margin="10,38,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TourNameTextBox" HorizontalAlignment="Left" Height="23" Margin="10,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="EventMonthTextBox"  HorizontalAlignment="Left" Height="23" Margin="10,94,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="EventDayTextBox" HorizontalAlignment="Left" Height="23" Margin="10,122,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="EventYearTextBox" HorizontalAlignment="Left" Height="23" Margin="10,150,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="PaymentTextBox" HorizontalAlignment="Left" Height="23" Margin="10,178,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="DateBookedTextBox" HorizontalAlignment="Left" Height="23" Margin="10,206,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Update" HorizontalAlignment="Left" Margin="10,234,0,0" VerticalAlignment="Top" Width="75" Click="Update_Click"/>
+        <Button Content="Delete" HorizontalAlignment="Left" Margin="90,234,0,0" VerticalAlignment="Top" Width="75" Click="Delete_Click"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="90,259,0,0" VerticalAlignment="Top" Width="75" Click="Add_Click"/>
+        <TextBlock x:Name="BookingsTextBlock" HorizontalAlignment="Left" Margin="271,29,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="9" Height="79" Width="439"/>
+        <Button Content="View event" HorizontalAlignment="Left" Margin="10,259,0,0" VerticalAlignment="Top" Width="75" Click="Event_Click"/>
 
     </Grid>
 </Page>

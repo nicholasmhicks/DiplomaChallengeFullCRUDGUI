@@ -24,6 +24,8 @@ namespace CrudGUI.Pages
     public partial class Bookings : Page
     {
 
+        public dynamic StoredData;
+
         private static Logger _logger = LogManager.GetCurrentClassLogger();
 
         DataAccess _da = new DataAccess();
@@ -68,6 +70,8 @@ namespace CrudGUI.Pages
 
         void PopulateGrid(List<dynamic> entities)
         {
+            this.StoredData = entities;
+
             DataTable dt = new DataTable();
 
             DataColumn BookingId = new DataColumn("Booking ID", typeof(string));
@@ -177,6 +181,19 @@ namespace CrudGUI.Pages
             {
                 throw;
             }
+        }
+
+        private void Event_Click(object sender, RoutedEventArgs e)
+        {
+            string textBoxData = "";
+            foreach (var i in this.StoredData)
+            {
+                if (i.TourName == TourNameTextBox.Text && i.EventMonth == EventMonthTextBox.Text && i.EventDay == EventDayTextBox.Text && i.EventYear == EventYearTextBox.Text)
+                {
+                    textBoxData += $"Booking ID: {i.BookingId} Client ID: {i.ClientId} Tour: {i.TourName} Date: {i.EventMonth}/{i.EventDay}/{i.EventYear} Paid: {i.Payment} DateBooked: {i.DateBooked}\n\n";
+                }
+            }
+            BookingsTextBlock.Text = textBoxData;
         }
     }
 }
