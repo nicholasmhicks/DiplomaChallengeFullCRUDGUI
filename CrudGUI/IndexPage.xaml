@@ -1,0 +1,17 @@
+﻿<Page x:Class="CrudGUI.IndexPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CrudGUI"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="IndexPage" Loaded="Window_Loaded">
+
+    <Grid>
+        <Button x:Name="ToursButton" Content="Tours" HorizontalAlignment="Left" VerticalAlignment="Top" Width="800" Height="198" Click="Tours_Click"/>
+        <Button x:Name="BookingsButton"  Content="Bookings" HorizontalAlignment="Left" Margin="0,235,0,0" VerticalAlignment="Top" Width="800" Height="90" Click="Bookings_Click"/>
+        <Button x:Name="ClientButton" Content="Client" HorizontalAlignment="Left" Margin="117,359,0,0" VerticalAlignment="Top" Width="75" Click="Client_Click"/>
+
+    </Grid>
+</Page>
